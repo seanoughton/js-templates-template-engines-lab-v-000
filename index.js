@@ -22,7 +22,7 @@ function createPost() {
   //so it adds a sidebar element and a div with an id of "post"
   //the div with id of post needs to be created here/now because the next step will be to grab the element and then set it equal to a variable
    document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
-   document.getElementsByTagName("footer")[0].innerHTML += commentsTemplate();
+   document.getElementsByTagName("main")[0].innerHTML += commentsTemplate();
 
 
   //Get the place where you are going to spit the html back out
@@ -59,7 +59,7 @@ function postComment() {
 
    //execute template function with JSON object for the interpolated values
    var commentSection = commentTemplate({ 'comment': comment, 'commenterName': commenterName});
-
+   
    //this gets the main DOM element and adds to it's innerHTML the commentTemplate
    document.getElementsByTagName("main")[0].innerHTML += commentSection;
 
