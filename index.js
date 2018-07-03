@@ -59,7 +59,7 @@ function postComment() {
 
    //execute template function with JSON object for the interpolated values
    var commentSection = commentTemplate({ 'comment': comment, 'commenterName': commenterName});
-   
+
    //this gets the main DOM element and adds to it's innerHTML the commentTemplate
    document.getElementsByTagName("main")[0].innerHTML += commentSection;
 
