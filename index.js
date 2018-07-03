@@ -29,7 +29,7 @@ function createPost() {
     //this is inside the pageTemplate, the div with the id of post
     //it was created by adding the pageTemplate to the main div
   var postElement = document.getElementById("post");
-  postElement.getElementsByTagName("footer")[0].innerHTML += commentsTemplate();
+  postElement.getElementsByTagName("footer")[0].innerHTML = commentsTemplate();
 
   //execute template function with JSON object for the interpolated values
   //the keys for the object match the variable names inside our interpolation delimiters.
